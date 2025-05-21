@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+/* === Global Reset === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* === NAVBAR === */
+#navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .6rem .6rem;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
+    background: black;
+}
+
+/* === SECTION DEFAULT === */
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === HOMEPAGE STYLES === */
+.home-layout #home {
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)), url(/photos/break.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.home-layout #home h1 {
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px;
+    text-shadow: 0px 1px 0px #ccc,
+                 0px 2px 0px #ccc,
+                 0px 3px 0px #ccc,
+                 0px 4px 0px #ccc,
+                 0px 5px 0px #ccc,
+                 0px 6px 0px #ccc,
+                 0px 7px 0px #ccc,
+                 0px 8px 0px #ccc;
+}
+
+.home-layout #Product,
+.home-layout #Contact {
+    background: #e5e5e5;
+}
+
+.home-layout #Product h1,
+.home-layout #Contact {
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow: 0px 1px 0px #ccc,
+                 0px 2px 0px #ccc,
+                 0px 3px 0px #ccc,
+                 0px 4px 0px #ccc,
+                 0px 5px 0px #ccc,
+                 0px 6px 0px #ccc,
+                 0px 7px 0px #ccc,
+                 0px 8px 0px #ccc;
+}
+
+/* .home-layout .card {
+    width: 250px;
+    height: 200px;
+    background: #e5e5e5;
+    border: #e5e5e5;
+    box-shadow: 15px 20px 20px rgba(0, 0, 0, .3),
+                inset 4px 4px 10px rgba(0, 0, 0, .3);
+} */
+
+/* === DASHBOARD LAYOUT === */
+.dashboard-layout {
+    display: flex;
+}
+
+.dashboard-layout .sidebar {
+    width: 250px;
+    background: #eef1f8;
+    padding: 20px;
+    height: 100vh;
+}
+
+.dashboard-layout .profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-layout .profile img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.dashboard-layout .profile h3 {
+    margin: 10px 0 5px;
+}
+
+.dashboard-layout .profile p {
+    font-size: 14px;
+    color: #555;
+}
+
+.dashboard-layout .social-icons i {
+    margin: 5px;
+    color: #666;
+    cursor: pointer;
+}
+
+.dashboard-layout nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dashboard-layout nav li {
+    padding: 10px 0;
+    cursor: pointer;
+    color: #444;
+}
+
+.dashboard-layout nav li.active,
+.dashboard-layout nav li:hover {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.dashboard-layout .main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.dashboard-layout header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.dashboard-layout .logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dashboard-layout .header-right i {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.dashboard-layout h2 {
+    margin: 20px 0;
+}
+
+.dashboard-layout .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px
+}
