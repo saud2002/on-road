@@ -89,13 +89,13 @@
     margin: 20px 0;
   }
   
-  .cards-dash {
+  .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
   }
   
-  .card-dash {
+  .card {
     background: #fff;
     border-radius: 8px;
     padding: 15px;
@@ -103,24 +103,24 @@
     transition: all 0.3s ease;
   }
   
-  .card-dash .card h3 {
+  .card h3 {
     font-size: 16px;
     margin-bottom: 10px;
   }
   
-  .card-dash .card p {
+  .card p {
     font-size: 24px;
     margin-bottom: 10px;
     font-weight: bold;
   }
   
-  .card-dash .card a {
+  .card a {
     font-size: 14px;
     color: #007bff;
     text-decoration: none;
   }
   
- .card-dash .card:hover {
+  .card:hover {
     transform: translateY(-5px);
   }
   

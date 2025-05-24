@@ -32,7 +32,7 @@
     </ul>
     <div >
     <form action="" method="get">
-    <a href="/dashboard">Login</a>
+    <a href="/user_login">Login</a>
     </form>
     </div>
     </div>

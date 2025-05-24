@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class KegalleController extends Controller
-{ 
+class UdageController extends Controller
+{
     public function index(){
-    return view('garages.Kegalle_view');
+  return view('garages.Udage_view');
 }
 }

@@ -1,5 +1,5 @@
 @extends('layouts.main')
 @section('content')
 @include('components.home.nav')
-@include('components.garages.KEGALLE')
+@include('components.garages.Kegalle')
 @endsection
