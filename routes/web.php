@@ -12,3 +12,11 @@ Route::get('/home',[HomeController::class,'index'])->name('Home.index');
 Route::get('/garages/abeyshinge',[AbeysingheController::class,'index'])->name('Abeysinghe.index');
 Route::get('/garages/kandy',[KandyController::class,'index'])->name('Kandy.index');
 Route::get('/garages/nimal',[KandyController::class,'index'])->name('Nimal.index');
+
+
+/* ----------------------------dashboard---------------------------- */
+//admin
+//user
+//garages
+
+/* ---------------------------------------------------------------- */
