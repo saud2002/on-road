@@ -34,9 +34,6 @@
     <form action="login page/login.html" method="get">
     <button class="rounded-pill">Login</button>
     </form>
-    <form action="login page/login.html" method="get">
-      <button class="rounded-pill">Login</button>
-      </form>
     </div>
     </div>
   </div>
