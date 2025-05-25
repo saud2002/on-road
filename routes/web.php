@@ -27,44 +27,25 @@ Route::get('/', function () {
 Route::get('/dashboard',function(){
     return view('dashboard_view');
 });
+
 // advices
 Route::get('/how_to_drive',[HowtodriveController::class,'index']);
-    
-
 Route::get('/drive_fatigue',[DrivefatigueController::class,'index']);
-    
-
 Route::get('/child_safety',[ChildsafetyController::class,'index']);
-   
-
 Route::get('/pre_trip',[PretripController::class,'index']);
-   
 
-
-
-// garages 
-   
-   
-Route::get('/Faith',[FaithController::class,'index']);
-    
-   
+// garages  
+Route::get('/Faith',[FaithController::class,'index']);  
 Route::get('/Udage',[UdageController::class,'index']);
-    
-
 Route::get('/Kandy',[KandyController::class,'index']);
-    
-
 Route::get('/Nimal',[NimalController::class,'index']);
-
-
 Route::get('/Abayasinga',[AbayasingaController::class,'index']);
-
-  
 Route::get('/Kegalle',[KegalleController::class,'index']);
     
 
 /// register
-Route::get('/register',[RegisterController::class,'index']);
+Route::get('/register',[RegisterController::class,'index'])->name('Register.index');
+Route::post('/register/store',[RegisterController::class,'store'])->name('Register.store');
 
 ///user login
 Route::get('/user_login',[UserloginController::class,'index']);
@@ -77,14 +58,7 @@ Route::get('/user_index',[UserindexController::class,'index']);
 
 
 ///services 
-Route::get('/mechanical',[MechanicalController::class,'index']);
-    
-   
-
-Route::get('/electrical',[ElectricalController::class,'index']);
-
-    
-Route::get('/tire',[TireController::class,'index']);
-    
-
+Route::get('/mechanical',[MechanicalController::class,'index']);   
+Route::get('/electrical',[ElectricalController::class,'index']);   
+Route::get('/tire',[TireController::class,'index']);   
 Route::get('/other_issue',[OtherController::class,'index']);

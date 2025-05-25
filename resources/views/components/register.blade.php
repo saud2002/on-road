@@ -69,36 +69,46 @@
 
   <div class="container">
     <h1>Register Your Vehicle Breakdown</h1>
-    <form action="#" method="POST" class="registration-form">
+    @if ($errors->any())
+      <div class="alert alert-danger">
+        <ul>
+          @foreach ($errors->all() as $error)
+            <li>{{$error}}</li>
+          @endforeach
+        </ul>
+      </div>
+    @endif
+    <form action="/register/store" method="post" class="registration-form">
+      @csrf
       <h2>User Information</h2>
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" value="{{old('name')}}" placeholder="Enter Full Name">
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" value="{{old('email')}}" placeholder="Enter Email Address">
 
-      <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" name="phone" required>
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" value="{{old('phone')}}" placeholder="Enter Phone Number">
 
       <h2>Vehicle Information</h2>
-      <label for="make">Vehicle Make:</label>
-      <input type="text" id="make" name="make" required>
+      <label for="make">Vehicle Make</label>
+      <input type="text" id="make" name="make" value="{{old('make')}}" placeholder="Enter Vehicle Make">
 
-      <label for="model">Vehicle Model:</label>
-      <input type="text" id="model" name="model" required>
+      <label for="model">Vehicle Model</label>
+      <input type="text" id="model" name="model" value="{{old('model')}}">
 
-      <label for="year">Year of Manufacture:</label>
-      <input type="number" id="year" name="year" required>
+      <label for="year">Year of Manufacture</label>
+      <input type="number" id="year" name="year" value="{{old('year')}}" placeholder="Enter Manufacture Year">
 
-      <label for="license">License Plate Number:</label>
-      <input type="text" id="license" name="license" required>
+      <label for="license">License Plate Number</label>
+      <input type="text" id="license" name="license" value="{{old('license')}}" placeholder="Enter License Plate Number">
 
       <h2>Breakdown Details</h2>
-      <label for="location">Current Location:</label>
-      <input type="text" id="location" name="location" required>
+      <label for="location">Current Location</label>
+      <input type="text" id="location" name="location" value="{{old('location')}}" placeholder="Enter Location">
 
-      <label for="description">Description of the Issue:</label>
-      <textarea id="description" name="description" rows="4" required></textarea>
+      <label for="description">Description of the Issue</label>
+      <textarea id="description" name="description" rows="4" placeholder="Enter The Message"></textarea>
 
       <button type="submit">Register Breakdown</button>
     </form>
