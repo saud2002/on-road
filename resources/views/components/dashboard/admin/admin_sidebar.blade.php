@@ -11,12 +11,12 @@
                             <a href="#"><i class="fas fa-graduation-cap"></i> <span>User</span> <span
                                     class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="/admin/dashboard/user-list">User List</a></li>
-                                <li><a href="/admin/dashboard/user-create">User Add</a></li>
+                                <li><a href="/admin/user-list">User List</a></li>
+                                <li><a href="/admin/user-create">User Add</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="#"><i class="fas fa-chalkboard-teacher"></i> <span>Service Provider</span> <span
+                            <a href="#"><i class="fas fa-chalkboard-teacher"></i> <span>Garage</span> <span
                                     class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="/admin/dashboard/service-provider-list">Service Provider List</a></li>

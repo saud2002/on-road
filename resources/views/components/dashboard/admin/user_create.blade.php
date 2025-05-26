@@ -36,7 +36,7 @@
                                     <option>Select Gender</option>
                                     <option value="female">Female</option>
                                     <option value="male">Male</option>
-                                    <option value="others">Others</option>
+                                   
                                 </select>
                             </div>
                         </div>
@@ -62,16 +62,6 @@
                             <div class="form-group local-forms">
                                 <label>Location </label>
                                 <input class="form-control" type="text" name="location" id="location" value="{{old('location')}}" placeholder="Enter Location">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4">
-                            <div class="form-group students-up-files">
-                                <label>Upload Photo (150px X 150px)</label>
-                                <div class="uplod">
-                                    <label class="file-upload image-upbtn mb-0">
-                                        Choose File <input type="file" name="img" id="img" value="{{old('img')}}">
-                                    </label>
-                                </div>
                             </div>
                         </div>
                         <div class="col-12">

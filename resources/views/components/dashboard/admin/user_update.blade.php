@@ -26,7 +26,7 @@
                                     <option>Select Gender</option>
                                     <option>Female</option>
                                     <option>Male</option>
-                                    <option>Others</option>
+                                  
                                 </select>
                             </div>
                         </div>
@@ -52,16 +52,6 @@
                             <div class="form-group local-forms">
                                 <label>Location </label>
                                 <input class="form-control" type="text" placeholder="Enter Location">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4">
-                            <div class="form-group students-up-files">
-                                <label>Upload Photo (150px X 150px)</label>
-                                <div class="uplod">
-                                    <label class="file-upload image-upbtn mb-0">
-                                        Choose File <input type="file">
-                                    </label>
-                                </div>
                             </div>
                         </div>
                         <div class="col-12">
