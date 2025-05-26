@@ -16,9 +16,13 @@ Route::get('/garages/nimal',[KandyController::class,'index'])->name('Nimal.index
 
 
 /* ----------------------------dashboard---------------------------- */
-//admin
-Route::get('/admin/user-create',[AdminController::class,'UserCreate'])->name('Admin.UserCreate');
 //user
-//garages
+Route::get('/admin/user-create',[AdminController::class,'UserCreate'])->name('Admin.UserCreate');
+Route::get('/admin/user-update',[AdminController::class,'UserUpdate'])->name('Admin.UserUpdate');
+Route::get('/admin/user-list',[AdminController::class,'UserList'])->name('Admin.UserList');
 
+//garages
+Route::get('/admin/garage-create',[AdminController::class,'GarageCreate'])->name('Admin.GarageCreate');
+Route::get('/admin/garage-update',[AdminController::class,'GarageUpdate'])->name('Admin.GarageUpdate');
+Route::get('/admin/garage-list',[AdminController::class,'GarageList'])->name('Admin.GarageList');
 /* ---------------------------------------------------------------- */
