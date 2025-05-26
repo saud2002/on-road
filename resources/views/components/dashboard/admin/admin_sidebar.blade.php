@@ -19,15 +19,8 @@
                             <a href="#"><i class="fas fa-chalkboard-teacher"></i> <span>Garage</span> <span
                                     class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="/admin/dashboard/service-provider-list">Service Provider List</a></li>
-                                <li><a href="/admin/dashboard/service-provider-create">Service Provider Add</a></li>
-                            </ul>
-                        </li>
-                        <li class="submenu">
-                            <a href="#"><i class="fas fa-building"></i> <span>Compliant</span> <span
-                                    class="menu-arrow"></span></a>
-                            <ul>
-                                <li><a href="/admin/dashboard/compliant-list">Compliant List</a></li>
+                                <li><a href="/admin/garage-list">Garage List</a></li>
+                                <li><a href="/admin/garage-create">Garage Add</a></li>
                             </ul>
                         </li>
                     </ul>

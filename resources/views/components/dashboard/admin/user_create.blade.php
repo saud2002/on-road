@@ -11,7 +11,7 @@
                         </ul>
                     </div>
                 @endif
-                <form action="/admin/dashboard/user-store" method="post" enctype="multipart/form-data">
+                <form action="/admin/user-store" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                         <div class="col-12">
@@ -36,7 +36,7 @@
                                     <option>Select Gender</option>
                                     <option value="female">Female</option>
                                     <option value="male">Male</option>
-                                   
+                                   <option value="other">Other</option>
                                 </select>
                             </div>
                         </div>

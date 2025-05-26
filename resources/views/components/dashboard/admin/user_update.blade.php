@@ -2,7 +2,9 @@
     <div class="col-sm-12">
         <div class="card comman-shadow">
             <div class="card-body">
-                <form>
+                <form action="{{route('Admin.UserEdit')}}" method="post">
+                    @csrf
+                    @method('PUT')
                     <div class="row">
                         <div class="col-12">
                             <h5 class="form-title student-info">User Information <span><a href="javascript:;"><i class="feather-more-vertical"></i></a></span></h5>

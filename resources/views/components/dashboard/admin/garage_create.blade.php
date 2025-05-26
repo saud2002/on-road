@@ -11,7 +11,7 @@
                         </ul>
                     </div>
                 @endif
-                <form action="/admin/dashboard/service-provider-store" method="post" enctype="multipart/form-data">
+                <form action="{{route('Admin.GarageStore')}}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                         <div class="col-12">
@@ -34,9 +34,9 @@
                                 <label>Gender <span class="login-danger">*</span></label>
                                 <select class="form-control select" name="gender" id="gender" value="{{old('gender')}}" >
                                     <option>Select Gender</option>
-                                    <option>Female</option>
-                                    <option>Male</option>
-                                    
+                                    <option value="female">Female</option>
+                                    <option value="male">Male</option>
+                                    <option value="other">Other</option>
                                 </select>
                             </div>
                         </div>
@@ -44,17 +44,6 @@
                             <div class="form-group local-forms calendar-icon">
                                 <label>Date Of Birth <span class="login-danger">*</span></label>
                                 <input class="form-control datetimepicker" type="text" name="date_of_birth" id="date_of_birth" value="{{old('date_of_birth')}}" placeholder="DD-MM-YYYY">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4">
-                            <div class="form-group local-forms">
-                                <label>Profession <span class="login-danger">*</span></label>
-                                <select class="form-control select" name="profession" value="{{old('profession')}}" >
-                                    <option>Please Select Profession </option>
-                                    <option value="plumber">Plumber</option>
-                                    <option value="painter">Painter</option>
-                                    <option value="mechanic">Mechanic</option>
-                                </select>
                             </div>
                         </div>
                         <div class="col-12 col-sm-4">
