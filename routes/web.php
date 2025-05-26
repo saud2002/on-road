@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AbeysingheController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KandyController;
 use Illuminate\Support\Facades\Route;
@@ -16,6 +17,7 @@ Route::get('/garages/nimal',[KandyController::class,'index'])->name('Nimal.index
 
 /* ----------------------------dashboard---------------------------- */
 //admin
+Route::get('/admin/user-create',[AdminController::class,'UserCreate'])->name('Admin.UserCreate');
 //user
 //garages
 
