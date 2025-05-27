@@ -2,9 +2,11 @@
 
 use App\Http\Controllers\AbeysingheController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BookController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KandyController;
 use App\Http\Controllers\NimalController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
 
@@ -16,7 +18,7 @@ Route::get('/garages/kandy',[KandyController::class,'index'])->name('Kandy.index
 Route::get('/garages/nimal',[NimalController::class,'index'])->name('Nimal.index');
 
 
-/* ----------------------------dashboard---------------------------- */
+/* ------------------------Admin dashboard---------------------------- */
 //user
 Route::get('/admin/user-create',[AdminController::class,'UserCreate'])->name('Admin.UserCreate');
 Route::post('/admin/user-store',[AdminController::class,'UserStore'])->name('Admin.UserStore');
@@ -28,7 +30,17 @@ Route::get('/admin/user-list',[AdminController::class,'UserList'])->name('Admin.
 //garages
 Route::get('/admin/garage-create',[AdminController::class,'GarageCreate'])->name('Admin.GarageCreate');
 Route::post('/admin/garage-store',[AdminController::class,'GarageStore'])->name('Admin.GarageStore');
-Route::get('/admin/garage-update',[AdminController::class,'GarageUpdate'])->name('Admin.GarageUpdate');
+Route::get('/admin/garage-update/{id}',[AdminController::class,'GarageUpdate'])->name('Admin.GarageUpdate');
 Route::delete('/admin/{id}',[AdminController::class,'GarageDelete'])->name('Admin.GarageDelete');
 Route::get('/admin/garage-list',[AdminController::class,'GarageList'])->name('Admin.GarageList');
+
+//service
+
+
+/* ---------------------------------------------------------------- */
+
+/* ------------------------user dashboard---------------------------- */
+Route::get('/user/garage-list',[UserController::class,'index'])->name('User.index');
+Route::get('/user/book',[BookController::class,'index'])->name('Book.index');
+Route::post('/user/book-store',[BookController::class,'store'])->name('Book.store');
 /* ---------------------------------------------------------------- */
