@@ -3,6 +3,7 @@
 use App\Http\Controllers\AbeysingheController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\GarageController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KandyController;
 use App\Http\Controllers\NimalController;
@@ -12,7 +13,7 @@ use Illuminate\Support\Facades\View;
 
 Route::get('/home',[HomeController::class,'index'])->name('Home.index');
 
-// garages
+// garages - home
 Route::get('/garages/abeyshinge',[AbeysingheController::class,'index'])->name('Abeysinghe.index');
 Route::get('/garages/kandy',[KandyController::class,'index'])->name('Kandy.index');
 Route::get('/garages/nimal',[NimalController::class,'index'])->name('Nimal.index');
@@ -45,3 +46,7 @@ Route::get('/user/garage-list',[UserController::class,'index'])->name('User.inde
 Route::get('/user/book',[BookController::class,'index'])->name('Book.index');
 Route::post('/user/book-store',[BookController::class,'store'])->name('Book.store');
 /* ---------------------------------------------------------------- */
+
+/* ------------------------garage dashboard---------------------------- */
+Route::get('/garage/book-list',[GarageController::class,'index'])->name('Garage.index');
+/* -------------------------------------------------------------------- */
