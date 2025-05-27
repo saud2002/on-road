@@ -30,7 +30,7 @@
                             <a href="#"> <span>Service</span> <span
                                     class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="#">Service History</a></li>
+                                <li><a href="/admin/book-list">Service History</a></li>
                             </ul>
                         </li>
 

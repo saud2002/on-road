@@ -35,7 +35,8 @@ Route::delete('/admin/{id}',[AdminController::class,'GarageDelete'])->name('Admi
 Route::get('/admin/garage-list',[AdminController::class,'GarageList'])->name('Admin.GarageList');
 
 //service
-
+Route::get('/admin/book-list',[AdminController::class,'booklist'])->name('Admin.booklist');
+Route::delete('/admin/{id}',[AdminController::class,'booklistdelete'])->name('Admin.booklistdelete');
 
 /* ---------------------------------------------------------------- */
 

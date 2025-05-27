@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\AdminGarage;
 use App\Models\AdminUser;
+use App\Models\Book;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -117,5 +118,14 @@ class AdminController extends Controller
     {   
         $garages = AdminGarage::all();
         return view('admin.garage_list_view', compact('garages'));
+    }
+    public function booklist(){
+        $books = Book::all();
+        return view('admin.book_list_view',compact('books'));
+    }
+    public function booklistdelete($id){
+        $book = Book::find($id);
+        $book->delete();
+        return redirect()->route('Admin.booklist',compact('book'));
     }
 }
