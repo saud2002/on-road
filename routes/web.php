@@ -14,15 +14,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('Home.index');//ok
 // advice
-Route::get('/advice/child-safety',[AdviceController::class,'chilsafety'])->name('Advice.chilsafety');
-Route::get('/advice/fatigue',[AdviceController::class,'fatigue'])->name('Advice.fatigue');
-Route::get('/advice/how-to-drive',[AdviceController::class,'HowToDrive'])->name('Advice.HowToDrive');
-Route::get('/advice/pre-trip',[AdviceController::class,'preTrip'])->name('Advice.preTrip');
+Route::get('/advice/child-safety',[AdviceController::class,'chilsafety'])->name('Advice.chilsafety');//ok
+Route::get('/advice/fatigue',[AdviceController::class,'fatigue'])->name('Advice.fatigue');//ok
+Route::get('/advice/how-to-drive',[AdviceController::class,'HowToDrive'])->name('Advice.HowToDrive');//ok
+Route::get('/advice/pre-trip',[AdviceController::class,'preTrip'])->name('Advice.preTrip');//ok
 // issues
-Route::get('/service/mechanical-issue',[IssuesController::class,'mechanical'])->name('Issues.mechanical');
-Route::get('/service/electrical-issue',[IssuesController::class,'electrical'])->name('Issues.electrical');
-Route::get('/service/other-issue',[IssuesController::class,'other'])->name('Issues.other');
-Route::get('/service/tire-issue',[IssuesController::class,'tire'])->name('Issues.tire');
+Route::get('/service/mechanical-issue',[IssuesController::class,'mechanical'])->name('Issues.mechanical');//ok
+Route::get('/service/electrical-issue',[IssuesController::class,'electrical'])->name('Issues.electrical');//ok
+Route::get('/service/other-issue',[IssuesController::class,'other'])->name('Issues.other');//ok
+Route::get('/service/tire-issue',[IssuesController::class,'tire'])->name('Issues.tire');//ok
 //register
 //login
 // garages - home
