@@ -23,7 +23,8 @@ Route::get('/service/mechanical-issue',[IssuesController::class,'mechanical'])->
 Route::get('/service/electrical-issue',[IssuesController::class,'electrical'])->name('Issues.electrical');
 Route::get('/service/other-issue',[IssuesController::class,'other'])->name('Issues.other');
 Route::get('/service/tire-issue',[IssuesController::class,'tire'])->name('Issues.tire');
-
+//register
+//login
 // garages - home
 Route::get('/garages/abeyshinge', [AbeysingheController::class, 'index'])->name('Abeysinghe.index');//ok
 Route::get('/garages/kandy', [KandyController::class, 'index'])->name('Kandy.index');//ok
