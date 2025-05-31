@@ -7,13 +7,6 @@
                 </li>
 
 
-                <li class="submenu">
-                    <a href="#"> <span>Garage</span> <span
-                            class="menu-arrow"></span></a>
-                    <ul>
-                        <li><a href="">Garage Update</a></li>
-                    </ul>
-                </li>
 
                 <li class="submenu">
                     <a href="#"> <span>Book</span> <span

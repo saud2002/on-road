@@ -13,7 +13,6 @@
                             <ul>
                                 <li><a href="/admin/user-list">User List</a></li>
                                 <li><a href="/admin/user-create">User Add</a></li>
-                                <li><a href="/admin/user-update/{id}">User Update</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
@@ -22,7 +21,6 @@
                             <ul>
                                 <li><a href="/admin/garage-list">Garage List</a></li>
                                 <li><a href="/admin/garage-create">Garage Add</a></li>
-                                <li><a href="/admin/garage-update/{id}">Garage Update</a></li>
                             </ul>
                         </li>
 

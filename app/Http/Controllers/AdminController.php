@@ -43,8 +43,6 @@ class AdminController extends Controller
     }
     public function UserUpdate(Request $request, $id)
     {
-
-
         $request->validate([
             'full_name' => 'required',
             'nic' => 'required|digits:10|unique:admin_users,nic,' . $id,

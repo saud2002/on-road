@@ -25,7 +25,7 @@
         <td>{{$user->phone_number}}</td>
         <td>{{$user->location}}</td>
         <td>
-          <a href="{{route('Admin.UserUpdate',$user->id)}}" class="btn btn-dark btn-sm">Edit</a>
+          <a href="{{route('Admin.UserEdit',$user->id)}}" class="btn btn-dark btn-sm">Edit</a>
           <form action="{{route('Admin.UserDelete',$user->id)}}" method="post">
             @csrf
             @method('DELETE')
