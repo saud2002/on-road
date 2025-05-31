@@ -11,10 +11,10 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">services</a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="">Mechanical Issues</a></li>
-          <li><a class="dropdown-item" href="">Electrical Issues</a></li>
-          <li><a class="dropdown-item" href="">Tire-Related Issues</a></li>
-          <li><a class="dropdown-item" href="">Other Issues</a></li>
+          <li><a class="dropdown-item" href="{{route('Issues.mechanical')}}">Mechanical Issues</a></li>
+          <li><a class="dropdown-item" href="{{route('Issues.electrical')}}">Electrical Issues</a></li>
+          <li><a class="dropdown-item" href="{{route('Issues.tire')}}">Tire-Related Issues</a></li>
+          <li><a class="dropdown-item" href="{{route('Issues.other')}}">Other Issues</a></li>
         </ul>
       </li>
       <li class="nav-item">

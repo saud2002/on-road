@@ -6,17 +6,23 @@ use App\Http\Controllers\AdviceController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\GarageController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\IssuesController;
 use App\Http\Controllers\KandyController;
 use App\Http\Controllers\NimalController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\View;
 
 Route::get('/', [HomeController::class, 'index'])->name('Home.index');//ok
+// advice
 Route::get('/advice/child-safety',[AdviceController::class,'chilsafety'])->name('Advice.chilsafety');
 Route::get('/advice/fatigue',[AdviceController::class,'fatigue'])->name('Advice.fatigue');
 Route::get('/advice/how-to-drive',[AdviceController::class,'HowToDrive'])->name('Advice.HowToDrive');
 Route::get('/advice/pre-trip',[AdviceController::class,'preTrip'])->name('Advice.preTrip');
+// issues
+Route::get('/service/mechanical-issue',[IssuesController::class,'mechanical'])->name('Issues.mechanical');
+Route::get('/service/electrical-issue',[IssuesController::class,'electrical'])->name('Issues.electrical');
+Route::get('/service/other-issue',[IssuesController::class,'other'])->name('Issues.other');
+Route::get('/service/tire-issue',[IssuesController::class,'tire'])->name('Issues.tire');
 
 // garages - home
 Route::get('/garages/abeyshinge', [AbeysingheController::class, 'index'])->name('Abeysinghe.index');//ok
