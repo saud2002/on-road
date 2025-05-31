@@ -25,8 +25,8 @@
         <td>{{$garage->phone_number}}</td>
         <td>{{$garage->location}}</td>
         <td>
-          <a href="" class="btn btn-dark btn-sm">Edit</a>
-          <form action="{{route('Admin.GarageDelete',$garage->id)}}" method="post">
+          <a href="{{ route('Admin.GarageEdit'), $garage->id }}" class="btn btn-dark btn-sm">Edit</a>
+          <form action="{{ route('Admin.GarageDelete', $garage->id) }}" method="post">
             @csrf
             @method('DELETE')
             <button class="btn btn-danger btn-sm">Delete</button>

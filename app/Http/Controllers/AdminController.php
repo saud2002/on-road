@@ -43,7 +43,7 @@ class AdminController extends Controller
     }
     public function UserUpdate(Request $request, $id)
     {
-        $user = AdminUser::find($id);
+
 
         $request->validate([
             'full_name' => 'required',
@@ -54,7 +54,7 @@ class AdminController extends Controller
             'phone_number' => 'required|digits:10',
             'location' => 'required',
         ]);
-
+        $user = AdminUser::find($id);
         $user->update([
             'full_name' => $request->full_name,
             'nic' => $request->nic,
@@ -64,6 +64,7 @@ class AdminController extends Controller
             'phone_number' => $request->phone_number,
             'location' => $request->location
         ]);
+        return redirect()-> route('Admin.UserEdit',compact('user'),$id);
     }
     public function UserDelete($id)
     {
@@ -105,27 +106,57 @@ class AdminController extends Controller
         ]);
         return redirect()->route('Admin.GarageCreate');
     }
-    public function GarageUpdate()
+    public function GarageEdit($id)
     {
-        return view('admin.garage_update_view');
+        $garage = AdminGarage::find($id);
+        return view('admin.garage_update_view', compact('garage'));
     }
-    public function GarageDelete($id){
+    public function GarageUpdate(Request $request, $id)
+    {
+        $request->validate([
+            'full_name' => 'required',
+            'nic' => 'required|digits:10|unique:admin_users,nic,' . $id,
+            'gender' => 'required|in:male,female,other',
+            'date_of_birth' => 'required',
+            'email' => 'required|email',
+            'phone_number' => 'required|digits:10',
+            'location' => 'required',
+
+        ]);
+
+        $garage = AdminGarage::find($id);
+        $garage->update([
+            'full_name' => $request->full_name,
+            'nic' => $request->nic,
+            'gender' => $request->gender,
+            'date_of_birth' => $request->date_of_birth,
+            'email' => $request->email,
+            'phone_number' => $request->phone_number,
+            'location' => $request->location
+        ]);
+
+        return redirect()->route('Admin.GarageEdit', compact('garage'), $id);
+    }
+    public function GarageDelete($id)
+    {
         $garage = AdminGarage::find($id);
         $garage->delete();
         return redirect()->route('Admin.GarageList', compact('garage'));
     }
     public function GarageList()
-    {   
+    {
         $garages = AdminGarage::all();
         return view('admin.garage_list_view', compact('garages'));
     }
-    public function booklist(){
+    public function booklist()
+    {
         $books = Book::all();
-        return view('admin.book_list_view',compact('books'));
+        return view('admin.book_list_view', compact('books'));
     }
-    public function booklistdelete($id){
+    public function booklistdelete($id)
+    {
         $book = Book::find($id);
         $book->delete();
-        return redirect()->route('Admin.booklist',compact('book'));
+        return redirect()->route('Admin.booklist', compact('book'));
     }
 }

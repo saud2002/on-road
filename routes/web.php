@@ -11,42 +11,43 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
 
-Route::get('/home',[HomeController::class,'index'])->name('Home.index');
+Route::get('/', [HomeController::class, 'index'])->name('Home.index');
 
 // garages - home
-Route::get('/garages/abeyshinge',[AbeysingheController::class,'index'])->name('Abeysinghe.index');
-Route::get('/garages/kandy',[KandyController::class,'index'])->name('Kandy.index');
-Route::get('/garages/nimal',[NimalController::class,'index'])->name('Nimal.index');
+Route::get('/garages/abeyshinge', [AbeysingheController::class, 'index'])->name('Abeysinghe.index');
+Route::get('/garages/kandy', [KandyController::class, 'index'])->name('Kandy.index');
+Route::get('/garages/nimal', [NimalController::class, 'index'])->name('Nimal.index');
 
 
 /* ------------------------Admin dashboard---------------------------- */
 //user
-Route::get('/admin/user-create',[AdminController::class,'UserCreate'])->name('Admin.UserCreate');
-Route::post('/admin/user-store',[AdminController::class,'UserStore'])->name('Admin.UserStore');
-Route::put('/admin/user-edit/{id}',[AdminController::class,'UserEdit'])->name('Admin.UserEdit');
-Route::put('/admin/user-update/{id}',[AdminController::class,'UserUpdate'])->name('Admin.UserUpdate');
-Route::delete('/admin/{id}',[AdminController::class,'UserDelete'])->name('Admin.UserDelete');
-Route::get('/admin/user-list',[AdminController::class,'UserList'])->name('Admin.UserList');
+Route::get('/admin/user-create', [AdminController::class, 'UserCreate'])->name('Admin.UserCreate');
+Route::post('/admin/user-store', [AdminController::class, 'UserStore'])->name('Admin.UserStore');
+Route::get('/admin/user-edit/{id}', [AdminController::class, 'UserEdit'])->name('Admin.UserEdit');
+Route::put('/admin/user-update/{id}', [AdminController::class, 'UserUpdate'])->name('Admin.UserUpdate');
+Route::delete('/admin/user-delete/{id}', [AdminController::class, 'UserDelete'])->name('Admin.UserDelete');
+Route::get('/admin/user-list', [AdminController::class, 'UserList'])->name('Admin.UserList');
 
 //garages
-Route::get('/admin/garage-create',[AdminController::class,'GarageCreate'])->name('Admin.GarageCreate');
-Route::post('/admin/garage-store',[AdminController::class,'GarageStore'])->name('Admin.GarageStore');
-Route::get('/admin/garage-update/{id}',[AdminController::class,'GarageUpdate'])->name('Admin.GarageUpdate');
-Route::delete('/admin/{id}',[AdminController::class,'GarageDelete'])->name('Admin.GarageDelete');
-Route::get('/admin/garage-list',[AdminController::class,'GarageList'])->name('Admin.GarageList');
+Route::get('/admin/garage-create', [AdminController::class, 'GarageCreate'])->name('Admin.GarageCreate');
+Route::post('/admin/garage-store', [AdminController::class, 'GarageStore'])->name('Admin.GarageStore');
+Route::get('/admin/garage-edit/{id}', [AdminController::class, 'GarageEdit'])->name('Admin.GarageEdit');
+Route::put('/admin/garage-update/{id}', [AdminController::class, 'GarageUpdate'])->name('Admin.GarageUpdate');
+Route::delete('/admin/garage-delete/{id}', [AdminController::class, 'GarageDelete'])->name('Admin.GarageDelete');
+Route::get('/admin/garage-list', [AdminController::class, 'GarageList'])->name('Admin.GarageList');
 
 //service
-Route::get('/admin/book-list',[AdminController::class,'booklist'])->name('Admin.booklist');
-Route::delete('/admin/{id}',[AdminController::class,'booklistdelete'])->name('Admin.booklistdelete');
+Route::get('/admin/book-list', [AdminController::class, 'booklist'])->name('Admin.booklist');
+Route::delete('/admin/book-delete/{id}', [AdminController::class, 'booklistdelete'])->name('Admin.booklistdelete');
 
 /* ---------------------------------------------------------------- */
 
 /* ------------------------user dashboard---------------------------- */
-Route::get('/user/garage-list',[UserController::class,'index'])->name('User.index');
-Route::get('/user/book',[BookController::class,'index'])->name('Book.index');
-Route::post('/user/book-store',[BookController::class,'store'])->name('Book.store');
+Route::get('/user/garage-list', [UserController::class, 'index'])->name('User.index');
+Route::get('/user/book', [BookController::class, 'index'])->name('Book.index');
+Route::post('/user/book-store', [BookController::class, 'store'])->name('Book.store');
 /* ---------------------------------------------------------------- */
 
 /* ------------------------garage dashboard---------------------------- */
-Route::get('/garage/book-list',[GarageController::class,'index'])->name('Garage.index');
+Route::get('/garage/book-list', [GarageController::class, 'index'])->name('Garage.index');
 /* -------------------------------------------------------------------- */
