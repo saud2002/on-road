@@ -12,6 +12,42 @@
 
         <!-- Garage Card 1 -->
         <div style="width: 300px; background-color: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; display: flex; flex-direction: column;">
+            <img src="/photos/KANDY MOTORS.jpeg" alt="KANDY MOTORS" style="width: 100%; height: 180px; object-fit: cover;">
+            <div style="padding: 20px; flex-grow: 1;">
+                <h2 style="margin-top: 0; color: #007bff;">KANDY MOTORS</h2>
+                <p><strong>Location:</strong> 123 Main Street, City</p>
+                <p><strong>Contact:</strong> +91 9876543210</p>
+                <p><strong>Services:</strong> Engine, Tire, Electrical</p>
+            </div>
+            <button style="background-color: #007bff; color: white; border: none; padding: 12px; border-radius: 0 0 15px 15px; cursor: pointer; font-weight: bold;">Contact Now</button>
+        </div>
+
+        <!-- Garage Card 2 -->
+        <div style="width: 300px; background-color: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; display: flex; flex-direction: column;">
+            <img src="/photos/NIMAL MOTOR ENGINEERING.jpeg" alt="NIMAL MOTOR" style="width: 100%; height: 180px; object-fit: cover;">
+            <div style="padding: 20px; flex-grow: 1;">
+                <h2 style="margin-top: 0; color: #e83e8c;">NIMAL MOTOR</h2>
+                <p><strong>Location:</strong> 45 Highway Road, City</p>
+                <p><strong>Contact:</strong> +91 9123456780</p>
+                <p><strong>Services:</strong> AC Repair, Battery, Alignment</p>
+            </div>
+            <button style="background-color: #e83e8c; color: white; border: none; padding: 12px; border-radius: 0 0 15px 15px; cursor: pointer; font-weight: bold;">Contact Now</button>
+        </div>
+
+        <!-- Garage Card 3 -->
+        <div style="width: 300px; background-color: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; display: flex; flex-direction: column;">
+            <img src="/photos/ABEYSINGHE MOTORS.jpeg" alt="ABEYSINGHE MOTORS" style="width: 100%; height: 180px; object-fit: cover;">
+            <div style="padding: 20px; flex-grow: 1;">
+                <h2 style="margin-top: 0; color: #fd7e14;">ABEYSINGHE MOTORS</h2>
+                <p><strong>Location:</strong> Sector 21, Near Mall, City</p>
+                <p><strong>Contact:</strong> +91 9988776655</p>
+                <p><strong>Services:</strong> Oil Change, Brakes, Suspension</p>
+            </div>
+            <button style="background-color: #fd7e14; color: white; border: none; padding: 12px; border-radius: 0 0 15px 15px; cursor: pointer; font-weight: bold;">Contact Now</button>
+        </div>
+
+         <!-- Garage Card 4   -->
+       <div style="width: 300px; background-color: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; display: flex; flex-direction: column;">
             <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="QuickFix Garage" style="width: 100%; height: 180px; object-fit: cover;">
             <div style="padding: 20px; flex-grow: 1;">
                 <h2 style="margin-top: 0; color: #007bff;">QuickFix Garage</h2>
@@ -22,8 +58,8 @@
             <button style="background-color: #007bff; color: white; border: none; padding: 12px; border-radius: 0 0 15px 15px; cursor: pointer; font-weight: bold;">Contact Now</button>
         </div>
 
-        <!-- Garage Card 2 -->
-        <div style="width: 300px; background-color: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; display: flex; flex-direction: column;">
+         <!-- Garage Card 5   -->
+         <div style="width: 300px; background-color: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; display: flex; flex-direction: column;">
             <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=600&q=80" alt="AutoCare Hub" style="width: 100%; height: 180px; object-fit: cover;">
             <div style="padding: 20px; flex-grow: 1;">
                 <h2 style="margin-top: 0; color: #e83e8c;">AutoCare Hub</h2>
@@ -34,7 +70,7 @@
             <button style="background-color: #e83e8c; color: white; border: none; padding: 12px; border-radius: 0 0 15px 15px; cursor: pointer; font-weight: bold;">Contact Now</button>
         </div>
 
-        <!-- Garage Card 3 -->
+        <!-- Garage Card 6   -->
         <div style="width: 300px; background-color: white; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; display: flex; flex-direction: column;">
             <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=600&q=80" alt="MaxWheels Garage" style="width: 100%; height: 180px; object-fit: cover;">
             <div style="padding: 20px; flex-grow: 1;">

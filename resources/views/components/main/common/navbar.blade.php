@@ -18,7 +18,7 @@
         </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="garages.All_garages">garages</a>
+        <a class="nav-link" href="garages/All_garages">garages</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">advices</a>
