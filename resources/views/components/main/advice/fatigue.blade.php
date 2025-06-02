@@ -1,70 +1,43 @@
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
 
-.container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-h1 {
-    text-align: center;
-    color: #d9534f; /* Bootstrap danger color */
-}
-
-h2 {
-    color: #333;
-}
-
-.fatigue-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 20px 0;
-}
-
-.symptoms-list {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-.symptoms-list li {
-    margin: 10px 0;
-    line-height: 1.6;
-}
-
-p {
-    line-height: 1.6;
-    color: #555;
-}
-    </style>
-    <div class="container">
-        <h1>Driver Fatigue</h1>
-        <img src="https://via.placeholder.com/600x300" alt="Driver Fatigue" class="fatigue-image">
-        <p>Being sleepy, tired, or exhausted affects the driver both physiologically and psychologically. Driver fatigue weakens judgment on the road. Drivers’ ability to judge their own level of tiredness decreases, which is the most dangerous symptom of being tired.</p>
-
-        <h2>Other Symptoms Could Vary Between Drivers:</h2>
-        <ul class="symptoms-list">
-            <li>Slow reactions</li>
-            <li>Yawning</li>
-            <li>Tired or sore eyes</li>
-            <li>Restlessness</li>
-            <li>Missing road signs</li>
-            <li>Drowsiness</li>
-            <li>Boredom</li>
-            <li>Poor concentration</li>
-            <li>Feeling irritable</li>
-            <li>Making fewer and larger steering corrections</li>
-            <li>Having difficulty in staying in the lane</li>
-        </ul>
-
-        <p>Once you notice any of the above symptoms, pull up to the side of the road. Rest. Refresh. Never drive under such conditions as it could lead to an accident. Never leave on a trip under the above conditions. Take a good rest the night before.</p>
+    <!-- Header Section -->
+    <div style="background-color: #6f42c1; color: white; padding: 40px 20px; text-align: center;">
+        <h1 style="margin: 0; font-size: 36px;">😴 Driver Fatigue</h1>
+        <p style="font-size: 18px; margin-top: 10px;">Tips to Stay Alert and Avoid Roadside Emergencies</p>
     </div>
+
+    <!-- Content Grid -->
+    <div style="display: flex; flex-wrap: wrap; max-width: 1100px; margin: 40px auto; padding: 0 20px; gap: 20px; justify-content: center;">
+
+        <div style="flex: 1 1 300px; background-color: #fff3cd; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🛌 Get Enough Sleep</h3>
+            <p>Ensure at least 7–9 hours of sleep before a long drive. Driving drowsy is just as dangerous as drunk driving.</p>
+        </div>
+
+        <div style="flex: 1 1 300px; background-color: #d4edda; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">☕ Take Regular Breaks</h3>
+            <p>Stop every 2 hours or 150 km to rest, stretch, and refresh. A short nap or coffee can restore alertness.</p>
+        </div>
+
+        <div style="flex: 1 1 300px; background-color: #cce5ff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🎧 Avoid Monotony</h3>
+            <p>Keep your mind active with music, conversation, or talk radio to help stay awake during long, quiet drives.</p>
+        </div>
+
+        <div style="flex: 1 1 300px; background-color: #f8d7da; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🧠 Know the Warning Signs</h3>
+            <p>Frequent yawning, drifting between lanes, or missing road signs are signs it’s time to pull over and rest.</p>
+        </div>
+
+        <div style="flex: 1 1 300px; background-color: #e2e3e5; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🚫 Never Rely on "Pushing Through"</h3>
+            <p>Willpower won’t prevent fatigue-related accidents. Rest is the only real solution for tiredness.</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 20px; background-color: #343a40; color: white;">
+        <p>&copy; 2025 On Road Vehicle Breakdown Assistance</p>
+    </footer>
+

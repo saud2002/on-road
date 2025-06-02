@@ -3,11 +3,13 @@
 use App\Http\Controllers\AbeysingheController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdviceController;
+use App\Http\Controllers\AllgaragesController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\GarageController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\IssuesController;
 use App\Http\Controllers\KandyController;
+use App\Http\Controllers\loginController;
 use App\Http\Controllers\NimalController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -25,10 +27,14 @@ Route::get('/service/other-issue',[IssuesController::class,'other'])->name('Issu
 Route::get('/service/tire-issue',[IssuesController::class,'tire'])->name('Issues.tire');//ok
 //register
 //login
+Route::get('/auth/login', [loginController::class, 'index'])->name('login.index');
 // garages - home
 Route::get('/garages/abeyshinge', [AbeysingheController::class, 'index'])->name('Abeysinghe.index');//ok
 Route::get('/garages/kandy', [KandyController::class, 'index'])->name('Kandy.index');//ok
 Route::get('/garages/nimal', [NimalController::class, 'index'])->name('Nimal.index');//ok
+Route::get('/garages/All_garages', [AllgaragesController::class, 'index'])->name('All_garages.index');//ok
+    
+
 
 
 /* ------------------------Admin dashboard---------------------------- */

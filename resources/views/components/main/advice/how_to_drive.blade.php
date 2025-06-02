@@ -1,56 +1,41 @@
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
 
-.container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f6f8;">
 
-h1 {
-    text-align: center;
-    color: #333;
-}
+    <div style="text-align: center; background-color: #007bff; color: white; padding: 40px 20px;">
+        <h1 style="margin: 0; font-size: 36px;">🚗 How To Protect Your Vehicle?</h1>
+        <p style="font-size: 18px; margin-top: 10px;">Simple tips to prevent breakdowns and keep your vehicle running smoothly</p>
+    </div>
 
-h2 {
-    color: #555;
-}
+    <div style="max-width: 1100px; margin: 30px auto; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
 
-.vehicle-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 20px 0;
-}
+        <div style="flex: 1 1 300px; background-color: #fff3cd; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🔧 Regular Maintenance</h3>
+            <p>Schedule regular oil changes, brake checks, and inspections to catch issues early.</p>
+        </div>
 
-.tips-list {
-    list-style-type: disc;
-    padding-left: 20px;
-}
+        <div style="flex: 1 1 300px; background-color: #d4edda; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🛢️ Check Fluid Levels</h3>
+            <p>Ensure oil, coolant, brake, and transmission fluids are at proper levels.</p>
+        </div>
 
-.tips-list li {
-    margin: 10px 0;
-    line-height: 1.6;
-}
-    </style>
-    <div class="container">
-        <h1>How To Protect Your Vehicle?</h1>
-        <img src="https://via.placeholder.com/600x300" alt="Vehicle Protection" class="vehicle-image">
-        <h2>Tips to make sure that vehicles remain secure and undamaged</h2>
-        <ul class="tips-list">
-            <li>Keep your vehicle's windows and sunroofs completely closed. Even a minuscule opening in a car window can provide enough room for thieves to work their way in.</li>
-            <li>Park in well-lit, attended areas. Lights and people will deter most car thieves and vandals.</li>
-            <li>Keep your keys with you and lock your vehicle at all times. One out of every five stolen cars is taken with the keys in it. Half of all vehicles stolen are left unlocked.</li>
-            <li>Don't leave your vehicle engine running. Never leave your car engine running unless you are in the driver's seat.</li>
-            <li>Avoid leaving valuables in your vehicle, especially in visible areas. Keep bags and packages out of sight and make sure things like stereo equipment are theft protected.</li>
-            <li>Use theft-prevention devices. Car alarms (particularly when the vehicle is marked as being alarmed) help deter theft. Steering wheel locks, protective steering columns, and car-disabling locks for the ignition, fuel, and other systems make it more difficult for a thief to drive away. Tracking systems, which help the police locate a vehicle if it is stolen, improve the chances of recovery.</li>
-        </ul>
+        <div style="flex: 1 1 300px; background-color: #d1ecf1; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🔋 Battery Care</h3>
+            <p>Clean terminals and check your battery’s charge, especially before long trips.</p>
+        </div>
+
+        <div style="flex: 1 1 300px; background-color: #cce5ff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🚙 Tire Maintenance</h3>
+            <p>Check tire pressure and rotate them regularly to prevent uneven wear.</p>
+        </div>
+
+        <div style="flex: 1 1 300px; background-color: #f8d7da; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">⚠️ Dashboard Alerts</h3>
+            <p>Don’t ignore warning lights—they can help detect issues early before they worsen.</p>
+        </div>
+
+        <div style="flex: 1 1 300px; background-color: #e2e3e5; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🌦️ Weather Protection</h3>
+            <p>Use car covers or garages to shield your vehicle from harsh weather and UV damage.</p>
+        </div>
+
     </div>

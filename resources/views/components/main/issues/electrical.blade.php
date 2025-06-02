@@ -1,81 +1,44 @@
-  <style>
-      body {
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          background-color: #f8f9fa;
-          margin: 0;
-          padding: 0;
-          color: #333;
-      }
 
-      header {
-          background-color: #28a745;
-          color: white;
-          padding: 20px 40px;
-          text-align: center;
-      }
+<body style="margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #f3f9ff;">
 
-      section {
-          padding: 40px 20px;
-          max-width: 1000px;
-          margin: auto;
-      }
+    <!-- Header -->
+    <div style="background-color: #007bff; color: white; padding: 40px 20px; text-align: center;">
+        <h1 style="margin: 0; font-size: 36px;">⚡ Electrical Issues</h1>
+        <p style="font-size: 18px; margin-top: 10px;">What to Do When Your Vehicle Faces Electrical Trouble</p>
+    </div>
 
-      .content-box {
-          background-color: white;
-          border-radius: 8px;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-          padding: 25px;
-          margin-bottom: 30px;
-      }
+    <!-- Tips Section -->
+    <div style="display: flex; flex-wrap: wrap; max-width: 1100px; margin: 40px auto; padding: 0 20px; gap: 20px; justify-content: center;">
 
-      h2 {
-          color: #28a745;
-      }
+        <div style="flex: 1 1 300px; background-color: #d4edda; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🔋 Dead Battery</h3>
+            <p>If your car won’t start, it’s likely a dead battery. Use jumper cables if you have them or call roadside assistance.</p>
+        </div>
 
-      ul {
-          margin-left: 20px;
-      }
+        <div style="flex: 1 1 300px; background-color: #fff3cd; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">💡 Lights Not Working</h3>
+            <p>If headlights, brake lights, or dashboard lights fail, it could be a fuse or wiring issue. Avoid driving in low visibility.</p>
+        </div>
 
-      footer {
-          background-color: #343a40;
-          color: white;
-          text-align: center;
-          padding: 15px;
-      }
-  </style>
+        <div style="flex: 1 1 300px; background-color: #f8d7da; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🚨 Dashboard Warnings</h3>
+            <p>Pay attention to battery or engine lights. Stop and seek help if any critical warning appears.</p>
+        </div>
 
-  <section>
-      <div class="content-box">
-          <h2>Common Electrical Problems in Vehicles</h2>
-          <ul>
-              <li>Dead or Weak Battery</li>
-              <li>Faulty Alternator</li>
-              <li>Starter Motor Failure</li>
-              <li>Blown Fuses or Relays</li>
-              <li>Short Circuits in Wiring</li>
-              <li>Malfunctioning Headlights or Indicators</li>
-          </ul>
-      </div>
+        <div style="flex: 1 1 300px; background-color: #cce5ff; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">📞 Call a Technician</h3>
+            <p>Don’t risk further damage. Call a certified mechanic or roadside assistance for electrical diagnostics.</p>
+        </div>
 
-      <div class="content-box">
-          <h2>How Our Assistance System Works</h2>
-          <p>When a vehicle experiences electrical failure on the road, our platform enables drivers to get quick and accurate help through:</p>
-          <ul>
-              <li>Mobile app or web-based issue reporting</li>
-              <li>Instant location tracking and dispatch of nearby electrical technicians</li>
-              <li>Diagnostic tools to remotely assess the issue (when possible)</li>
-              <li>Provision of jump-start, battery replacement, or fuse/relay fixes</li>
-              <li>Support for towing if roadside fix is not possible</li>
-          </ul>
-      </div>
+        <div style="flex: 1 1 300px; background-color: #e2e3e5; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🔌 Avoid DIY Repairs</h3>
+            <p>Electrical systems are complex. Only perform fixes like fuse checks if you are experienced.</p>
+        </div>
 
-      <div class="content-box">
-          <h2>Why Choose Our Service?</h2>
-          <ul>
-              <li>Fast and Reliable Electrical Issue Response</li>
-              <li>Certified Electricians with Experience</li>
-              <li>Real-time Status Updates and Notifications</li>
-              <li>Digital Repair Logs for Future Reference</li>
-          </ul>
-      </div>
-  </section>
+    </div>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 20px; background-color: #343a40; color: white;">
+        <p>&copy; 2025 On Road Vehicle Breakdown Assistance</p>
+    </footer>
+

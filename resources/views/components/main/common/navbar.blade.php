@@ -1,6 +1,6 @@
   <nav class="navbar navbar-expand-sm  navbar-dark" id="navbar">
     <a class="navbar-brand" href="#">
-      <img src="C:\Users\Dell\Desktop\IP project\New folder\logo.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+      <img src="/photos/c.jpeg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
     </a>
   </div>
    <div class="container-fluid">
@@ -18,7 +18,7 @@
         </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="garages.All_garages">garages</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">advices</a>
@@ -31,7 +31,7 @@
       </li>
     </ul>
     <div >
-    <form action="login page/login.html" method="get">
+    <form action="/auth/login" method="get">
     <button class="rounded-pill">Login</button>
     </form>
     </div>

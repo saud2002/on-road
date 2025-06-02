@@ -1,66 +1,44 @@
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-    }
 
-    .container {
-        max-width: 800px;
-        margin: 50px auto;
-        padding: 20px;
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+<body style="margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #eef6f9;">
 
-    h1 {
-        text-align: center;
-        color: #007BFF;
-        /* Bootstrap primary color */
-    }
+    <!-- Header Section -->
+    <div style="background-color: #17a2b8; color: white; padding: 40px 20px; text-align: center;">
+        <h1 style="margin: 0; font-size: 36px;">🧰 Pre-Trip Checkup</h1>
+        <p style="font-size: 18px; margin-top: 10px;">Essential checks before hitting the road</p>
+    </div>
 
-    h2 {
-        color: #333;
-    }
+    <!-- Advice Tips Grid -->
+    <div style="display: flex; flex-wrap: wrap; max-width: 1100px; margin: 40px auto; padding: 0 20px; gap: 20px; justify-content: center;">
 
-    .checkup-image {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        margin: 20px 0;
-    }
+        <div style="flex: 1 1 300px; background-color: #fff3cd; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🔋 Battery</h3>
+            <p>Check for corrosion on terminals and ensure the battery is fully charged, especially for long trips.</p>
+        </div>
 
-    .checkup-tips {
-        list-style-type: disc;
-        padding-left: 20px;
-    }
+        <div style="flex: 1 1 300px; background-color: #d4edda; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🛢️ Fluid Levels</h3>
+            <p>Inspect oil, coolant, brake, windshield washer, and transmission fluids before departure.</p>
+        </div>
 
-    .checkup-tips li {
-        margin: 10px 0;
-        line-height: 1.6;
-    }
+        <div style="flex: 1 1 300px; background-color: #f8d7da; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🚗 Tires</h3>
+            <p>Check tire pressure, tread depth, and look for any visible damage or uneven wear. Don’t forget the spare!</p>
+        </div>
 
-    p {
-        line-height: 1.6;
-        color: #555;
-    }
-</style>
+        <div style="flex: 1 1 300px; background-color: #cce5ff; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🔧 Tools & Emergency Kit</h3>
+            <p>Pack a jack, spare tire, jumper cables, flashlight, first aid kit, and basic tools for safety.</p>
+        </div>
 
-<div class="container">
-    <h1>Pre-Trip Checkup</h1>
-    <img src="https://via.placeholder.com/600x300" alt="Pre-Trip Checkup" class="checkup-image">
-    <p>A 10-minute pre-trip check-up can pay off. The Car Care Council offers three suggestions for a traveler’s 10-minute pre-trip checklist:</p>
+        <div style="flex: 1 1 300px; background-color: #e2e3e5; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">💡 Lights & Wipers</h3>
+            <p>Make sure all headlights, brake lights, and turn signals are working properly. Test wipers and washer spray.</p>
+        </div>
 
-    <h2>Checklist:</h2>
-    <ul class="checkup-tips">
-        <li><strong>Check all fluids:</strong> There are several fluids, in addition to antifreeze, that require attention, including engine oil, power steering, brake and transmission fluids, and windshield washer solvent and antifreeze/coolant.</li>
-        <li><strong>Check hoses and belts:</strong> A belt that fails can affect the electrical system, air conditioning, and power steering, as well as the cooling system. Cooling system hoses may be deteriorating from within, so old hoses and clamps in marginal condition might need to be replaced.</li>
-        <li><strong>Check the tyres:</strong> Check tire inflation and inspect the tread for uneven wear, indicating the need for wheel alignment. Also, look for bulges and bald spots.</li>
-    </ul>
+    </div>
 
-    <p>“While a last-minute checkup is better than no checkup, motorists should plan ahead to allow time to perform necessary maintenance themselves or at the local service facility. A properly maintained vehicle is safer and more dependable and will even save a few dollars at the gas pumps,” said the American Car Care Council’s Executive Director, Rich White.</p>
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 20px; background-color: #343a40; color: white;">
+        <p>&copy; 2025 On Road Vehicle Breakdown Assistance</p>
+    </footer>
 
-    <p>Not only can a pre-trip inspection help reduce chances of costly and possibly dangerous road trouble, it also provides an opportunity to have repairs made at home, with one’s own technician who knows the vehicle.</p>
-</div>

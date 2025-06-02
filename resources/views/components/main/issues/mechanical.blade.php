@@ -1,78 +1,45 @@
-  <style>
-      body {
-          font-family: Arial, sans-serif;
-          background-color: #f4f6f8;
-          color: #333;
-          margin: 0;
-          padding: 0;
-      }
 
-      header {
-          background-color: #007bff;
-          color: white;
-          padding: 20px 40px;
-          text-align: center;
-      }
+<body style="margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #f0f5f9;">
 
-      section {
-          padding: 40px;
-      }
+    <!-- Header -->
+    <div style="background-color: #28a745; color: white; padding: 40px 20px; text-align: center;">
+        <h1 style="margin: 0; font-size: 36px;">🔧 Mechanical Issue</h1>
+        <p style="font-size: 18px; margin-top: 10px;">How to Handle Unexpected Vehicle Problems</p>
+    </div>
 
-      h2 {
-          color: #007bff;
-      }
+    <!-- Tips Section -->
+    <div style="display: flex; flex-wrap: wrap; max-width: 1100px; margin: 40px auto; padding: 0 20px; gap: 20px; justify-content: center;">
 
-      .issues,
-      .solution {
-          background-color: white;
-          padding: 20px;
-          border-radius: 8px;
-          margin-bottom: 30px;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      }
+        <div style="flex: 1 1 300px; background-color: #fff3cd; padding: 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🚨 Identify the Problem</h3>
+            <p>Check for any warning lights, strange noises, smoke, or fluid leaks to understand what might be wrong.</p>
+        </div>
 
-      footer {
-          background-color: #333;
-          color: white;
-          text-align: center;
-          padding: 15px;
-      }
-  </style>
+        <div style="flex: 1 1 300px; background-color: #cce5ff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">📞 Call for Assistance</h3>
+            <p>Contact your breakdown service provider or mechanic immediately for help or towing services.</p>
+        </div>
 
-  <section>
-      <div class="issues">
-          <h2>Common Mechanical Issues</h2>
-          <ul>
-              <li>Engine Overheating</li>
-              <li>Flat Tires or Blowouts</li>
-              <li>Brake Failures</li>
-              <li>Transmission Problems</li>
-              <li>Battery Failure</li>
-              <li>Steering Malfunctions</li>
-          </ul>
-      </div>
+        <div style="flex: 1 1 300px; background-color: #d4edda; padding: 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🔒 Stay Safe</h3>
+            <p>Turn on hazard lights, park in a safe location off the road, and use a reflective triangle if available.</p>
+        </div>
 
-      <div class="solution">
-          <h2>How Our System Helps</h2>
-          <p>
-              Our On-Road Vehicle Breakdown Assistance project provides instant support for drivers facing mechanical issues. Using GPS tracking, mobile communication, and a network of certified mechanics, we offer:
-          </p>
-          <ul>
-              <li>Real-time issue reporting via a mobile/web app</li>
-              <li>Quick location-based dispatch of assistance</li>
-              <li>Mechanic verification and live status updates</li>
-              <li>Emergency towing services for critical breakdowns</li>
-              <li>Digital records of assistance and repairs</li>
-          </ul>
-      </div>
+        <div style="flex: 1 1 300px; background-color: #f8d7da; padding: 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">📍 Share Your Location</h3>
+            <p>Give your exact location to the mechanic or towing service to reduce waiting time.</p>
+        </div>
 
-      <div class="solution">
-          <h2>Benefits</h2>
-          <ul>
-              <li>24/7 Roadside Support</li>
-              <li>Faster Response Time</li>
-              <li>Reduced Stress for Drivers</li>
-              <li>Trusted Mechanics and Transparency</li>
-          </ul>
-      </div>
-  </section>
+        <div style="flex: 1 1 300px; background-color: #e2e3e5; padding: 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0;">🧰 Avoid DIY Fixes</h3>
+            <p>Unless you're confident and trained, avoid attempting repairs yourself on the roadside.</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 20px; background-color: #343a40; color: white;">
+        <p>&copy; 2025 On Road Vehicle Breakdown Assistance</p>
+    </footer>
+
+
