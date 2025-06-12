@@ -11,4 +11,7 @@ class UserController extends Controller
         $garages = AdminGarage::all();
         return view('user.garage_list_view',compact('garages'));
     }
+    public function dashboard(){
+        return view('user.dashboard');
+    }
 }

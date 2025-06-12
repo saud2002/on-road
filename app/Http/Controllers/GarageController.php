@@ -11,4 +11,7 @@ class GarageController extends Controller
         $books = Book::all();
         return view('garages.book_list_view',compact('books'));
     }
+    public function dashboard(){
+        return view('garages.dashboard');
+    }
 }

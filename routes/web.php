@@ -45,13 +45,10 @@ Route::post('/register', [RegisterController::class, 'register'])->name('registe
 
 // Admin dashboard routes
 Route::middleware(['auth', 'role:admin'])->group(function () {
-    // Route::get('/admin/dashboard', function () {
-    //     return view('admin.dashboard');
-    // })->name('admin.dashboard');
-
 
     /* ------------------------Admin dashboard---------------------------- */
     //user
+    Route::get('/admin/dashboard',[AdminController::class,'dashboard'])->name('Admin.dashboard');
     Route::get('/admin/user-create', [AdminController::class, 'UserCreate'])->name('Admin.UserCreate'); //ok
     Route::post('/admin/user-store', [AdminController::class, 'UserStore'])->name('Admin.UserStore'); //ok
     Route::get('/admin/user-edit/{id}', [AdminController::class, 'UserEdit'])->name('Admin.UserEdit'); //ok
@@ -76,10 +73,8 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
 // User dashboard routes
 Route::middleware(['auth', 'role:user'])->group(function () {
-    // Route::get('/user/dashboard', function () {
-    //     return view('user.dashboard');
-    // })->name('user.dashboard');
     /* ------------------------user dashboard---------------------------- */
+    Route::get('/user/dashboard',[UserController::class,'dashboard'])->name('User.dashboard');
     Route::get('/user/garage-list', [UserController::class, 'index'])->name('User.index'); //ok
     Route::get('/user/book', [BookController::class, 'index'])->name('Book.index'); //ok
     Route::post('/user/book-store', [BookController::class, 'store'])->name('Book.store'); //ok
@@ -88,10 +83,8 @@ Route::middleware(['auth', 'role:user'])->group(function () {
 
 // garages dashboard routes
 Route::middleware(['auth', 'role:service_provider'])->group(function () {
-    // Route::get('/provider/dashboard', function () {
-    //     return view('provider.dashboard');
-    // })->name('provider.dashboard');
     /* ------------------------garage dashboard---------------------------- */
+    Route::get('/garage/dashboard',[GarageController::class,'dashboard'])->name('Garage.dashboard');
     Route::get('/garage/book-list', [GarageController::class, 'index'])->name('Garage.index');
     /* -------------------------------------------------------------------- */
 });

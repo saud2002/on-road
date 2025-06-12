@@ -22,9 +22,9 @@ class LoginController extends Controller
 
             // Redirect based on role
             return match ($user->role) {
-                'admin' => redirect()->route('admin.dashboard'),
-                'service_provider' => redirect()->route('provider.dashboard'),
-                default => redirect()->route('user.dashboard'),
+                'admin' => redirect()->route('Admin.dashboard'),
+                'service_provider' => redirect()->route('Garage.dashboard'),
+                default => redirect()->route('User.dashboard'),
             };
         }
 

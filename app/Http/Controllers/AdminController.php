@@ -157,4 +157,7 @@ class AdminController extends Controller
         $book->delete();
         return redirect()->route('Admin.booklist', compact('book'));
     }
+    public function dashboard(){
+        return view('admin.dashboard');
+    }
 }
